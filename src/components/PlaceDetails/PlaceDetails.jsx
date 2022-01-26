@@ -18,8 +18,10 @@ import notFound from '../../assets/icons/not_found_restaraunt.png'
 
 import useStyles from './styles'
 
-export const PlaceDetails = ({ place }) => {
+export const PlaceDetails = ({ place, selected, refProp }) => {
   const classes = useStyles()
+
+  if(selected) refProp?.current?.scrollIntoView({ behavior: "smooth", block: "start" })
 
   return (
     <Card elevation={6}>
@@ -37,7 +39,11 @@ export const PlaceDetails = ({ place }) => {
           {place.name}
         </Typography>
         <Box display='flex' justifyContent='space-between'>
-          <Typography variant='subtitle1'>Price</Typography>
+          <Rating value={Number(place.rating)} readOnly />
+          <Typography gutterBottom variant='subtitle1'>out of {place.num_reviews} reviews</Typography>
+        </Box>
+        <Box display='flex' justifyContent='space-between'>
+          <Typography variant='subtitle1'></Typography>
           <Typography gutterBottom variant='subtitle1'>{place.price_level}</Typography>
         </Box>
         <Box display='flex' justifyContent='space-between'>
