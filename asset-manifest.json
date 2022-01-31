@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.b2962b3b.js",
-    "index.html": "/index.html",
-    "main.b2962b3b.js.map": "/static/js/main.b2962b3b.js.map"
+    "main.css": "/trip_advisor/static/css/main.31d6cfe0.css",
+    "main.js": "/trip_advisor/static/js/main.b2962b3b.js",
+    "index.html": "/trip_advisor/index.html",
+    "main.b2962b3b.js.map": "/trip_advisor/static/js/main.b2962b3b.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
